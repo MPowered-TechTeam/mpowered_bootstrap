@@ -13,6 +13,9 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      #title_to_change {
+        color: red;
+      }
     </style>
     <link href="index_files/bootstrap-responsive.css" rel="stylesheet">
 
@@ -27,6 +30,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript">
+      function button_click() {
+        $("#title_to_change").html("MPowered is awesome!");
+      }
+    </script>
   </head>
 
   <body>
@@ -43,7 +51,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="https://www.google.com/">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -53,8 +61,12 @@
 
     <div class="container">
 
-      <h1>Bootstrap starter template</h1>
+      <h1 id="title_to_change">Bootstrap starter template</h1>
       <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+      <button onclick="button_click();">
+        Click Here
+      </button>
 
     </div> <!-- /container -->
 
